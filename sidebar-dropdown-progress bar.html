@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Annisa Puspitasari</title>
+  <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="header.html" class="active">Introducing</a>
+    <a href="#">My Programming Language</a>
+    <a href="#">Project</a>
+    <a href="#">Contact</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span><br /><br />
+  <hr>
+  <nav>
+    <div class="mainMenu"><a href="#">My Gallery</a>
+      <div class="dropdown">
+        <a href="#">My Photos</a>
+        <a href="#">My Videos</a>
+        <a href="#">My Music</a>
+      </div>
+    </div>
+    <div class="mainMenu"><a href="#">My Project</a>
+      <div class="dropdown">
+        <a href="#">Games 1</a>
+        <a href="#">Games 2</a>
+        <a href="">Games 3</a>
+        <a href="#">Login Form 1</a>
+        <a href="">Login Form 2</a>
+        <a href="#">Calculator</a>
+        <a href="#">Paradise Of Indonesia</a>
+      </div>
+    </div>
+    <div class="mainMenu"><a href="#">Skill</a>
+      <div class="dropdown">
+        <a href="#">Qiro'atul Qur'an</a>
+        <a href="#">Sing a Songs</a>
+        <a href="#">Programming</a>
+        <a href="#">Editing Videos</a>
+        <a href="#">Editing Photos</a>
+        <a href="#">Design Logo</a>
+        <a href="#">Design Poster</a>
+        <a href="#">Design Banner</a>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "180px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <br><br><br>
+  <!-- konten -->
+  <div class="about-section">
+    <div class="inner-width">
+
+      <h1>Annisa Puspitasari</h1>
+      <div class="border"></div>
+      <div class="about-section-row">
+        <div class="about-section-col">
+          <div class="about">
+            <p>Saya Nisa, Saya berasal dari bandung, jawa barat. Hobi Saya ngoding, menyanyi, dan ngutak-ngatik Laptop atau Handphone. Saya menyukai Web Programming walau sebenarnya saya-pun menyukai semua jenis bahasa pemrograman.</p>
+            <a href="#">Ready to work</a>
+          </div>
+        </div>
+        <div class="about-section-col">
+          <div class="skills">
+            <div class="skill">
+              <div class="title">Web Design</div>
+              <div class="progress">
+                <div class="progress-bar p1">90%</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <div class="title">UI Design</div>
+              <div class="progress">
+                <div class="progress-bar p2">78%</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <div class="title">UX Design</div>
+              <div class="progress">
+                <div class="progress-bar p3">50%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+body{
+      font-family: 'Bad Script', Cursive;}
+img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: 420px;
+}
+.sidenav .active{
+  color: #ff00dc;
+}
+.sidenav {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index:1;
+  top: 30px;
+  left: 0;
+  background-color: pink;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: hotpink;
+  font-weight: bolder;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #FF00DCFF;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.mainMenu{
+    float: left;
+    position: relative;
+}
+.dropdown{
+    display: none;
+}
+.mainMenu>a, .dropdown>a{
+    display: block;
+}
+.mainMenu:hover .dropdown{
+    display: block;
+}
+
+/* Style */
+nav a{
+    text-decoration: none;
+    color: hotpink;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #ddd;
+}
+nav a:hover{
+  color: #ff00dc;
+}
+.mainMenu{
+    background-color: #ddd;
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.mainMenu:first-child{
+    margin-left: 5%;
+    border-radius: 5px 0 0 5px;
+}
+.mainMenu:last-child{
+    border-radius: 0 5px 5px 0;
+}
+.dropdown{
+    background:pink;
+    width: 100%;
+}
+.mainMenu:hover, .dropdown>a:hover{
+    background : none;
+}
+.mainMenu:first-child:hover{
+    border-radius: 5px 0 0 0;
+}
+.mainMenu:last-child:hover{
+    border-radius: 0 5px 0 0;
+}
+.dropdown:last-child, .dropdown>a:last-child:hover{
+    border-radius: 0 0 5px 5px;
+}
+/* aboutttt */
+.about-section{
+  width: 100%;
+  background: #f1f1f1;
+  padding: 40px 0;
+}
+
+.inner-width{
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.about-section h1{
+  text-align: center;
+  color: hotpink;
+}
+
+.border{
+  width: 400px;
+  height: 5px;
+  background: grey;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about-section-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-section-col{
+  flex: 50%;
+}
+
+.about{
+  padding-right: 30px;
+}
+
+.about p{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about a{
+  display: inline-block;
+  color: hotpink;
+  text-decoration: none;
+  border: 2px solid #ff00dc;
+  border-radius: 24px;
+  padding: 8px 40px;
+  transition: 0.4s linear;
+}
+
+.about a:hover{
+  color: #fff;
+  background: hotpink;
+}
+
+.skills{
+  padding-left: 30px;
+}
+
+.skill{
+  margin-bottom: 10px;
+}
+
+.progress{
+  width: 100%;
+  height: 12px;
+  background: #ddd;
+  border-radius: 12px;
+}
+
+.progress-bar{
+  height: 20px;
+  background: hotpink;
+  border-radius: 12px;
+}
+
+.p1{
+  width: 90%;
+}
+
+.p2{
+  width: 70%;
+}
+
+.p3{
+  width: 50%;
+}
+
+.progress-bar span{
+  float: right;
+  margin-right: 6px;
+  line-height: 13px;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media screen and (max-width:700px){
+  .about-section-col{
+    flex: 100%;
+    margin: 10px 0;
+  }
+
+.about, .skills{
+  padding: 0;
+}
+
+.about{
+  text-align: center;
+}
+</style>
+</html>
