@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>login form nisa 2</title>
+  <link rel="stylesheet" href="loginformnisa2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="image-box"> </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-container">
+        <div class="menu"> <button type="button" id="loginbtn" onclick="openlogintab()">Login</button> <button type="button" id="registerbtn" onclick="openregistertab()">Register</button> </div>
+        <div class="form-box">
+          <div id="login-tab">
+            <h1>I've an account</h1> <input type="text" placeholder="username"> <input type="password" placeholder="password"> <button type="button">login</button>
+          </div>
+          <div id="Register-tab">
+            <h1>I'm new user</h1> <input type="text" placeholder="username"> <input type="email" placeholder="email"> <input type="password" placeholder="password"> <button type="button">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openregistertab() {
+      document.getElementById('Register-tab').style.display = "block";
+      document.getElementById('login-tab').style.display = "none";
+      document.getElementById('registerbtn').style.borderBottom = "4px solid #ff2aaa";
+      document.getElementById('loginbtn').style.borderBottom = "none";
+    }
+
+    function openlogintab() {
+      document.getElementById('login-tab').style.display = "block";
+      document.getElementById('Register-tab').style.display = "none";
+      document.getElementById('loginbtn').style.borderBottom = "4px solid #ff2aaa";
+      document.getElementById('registerbtn').style.borderBottom = "none";
+    }
+  </script>
+</body>
+
+</html>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin: 0 !important;
+}
+.col-md-8,
+.col-md-4 {
+  padding: initial !important;
+  height: 600px;
+}
+.image-box {
+  text-align: center;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/codelifings/image/upload/v1590888142/2020-05-31_07.34.28_1_xzph7i.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-box h1 {
+  color: #fff;
+  font-size: 80px;
+  padding-top: 200px;
+}
+.form-container {
+  height: 100%;
+}
+.menu {
+  padding: 15px 20px 0;
+  border-bottom: 2px solid #ff2aaa;
+}
+.menu button {
+  background: transparent;
+  border: none;
+  outline: none !important;
+  margin: 0 12px;
+  padding: 0 10px 5px 10px;
+}
+.form-box {
+  margin-top: 70px;
+  text-align: center;
+}
+.form-box h1 {
+  margin-bottom: 50px;
+  color: #ff2aaa;
+}
+.form-box input {
+  margin-bottom: 40px;
+  width: 50%;
+  border: none;
+  outline: none;
+  padding: 5px 0;
+  background: transparent;
+  border-bottom: 1px solid #ff2aaa;
+}
+.form-box button {
+  width: 50%;
+  padding: 5px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #ff2aaa;
+  color: #fff;
+  font-weight: 600;
+}
+#Register-tab {
+  display: none;
+}
+#loginbtn {
+  border-bottom: 4px solid #ff2aaa;
+}
+</style>
