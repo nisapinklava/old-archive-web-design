@@ -1,0 +1,85 @@
+<div class="ajep22">
+  <ul>
+    <li>A</li>
+    <li>N</li>
+    <li>N</li>
+    <li>I</li>
+    <li>S</li>
+    <li>A</li>
+  </ul>
+</div>
+
+<style>
+body {
+  background: black;
+}
+.ajep22 ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.ajep22 ul li {
+  list-style: none;
+  font-family: arial;
+  font-size: 80px;
+  letter-spacing: 15px;
+  text-shadow: none;
+  animation: ravi 1s infinite linear;
+}
+@keyframes ravi {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  18% {
+    color: #484848;
+    text-shadow: none;
+  }
+  30% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  35% {
+    color: #484848;
+    text-shadow: none;
+  }
+  60% {
+    color: #484848;
+    text-shadow: none;
+  }
+  70% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+ul li:nth-child(1) {
+  animation-delay: -2s;
+}
+ul li:nth-child(2) {
+  animation-delay: -4s;
+}
+ul li:nth-child(3) {
+  animation-delay: -6s;
+}
+ul li:nth-child(4) {
+  animation-delay: -8s;
+}
+ul li:nth-child(5) {
+  animation-delay: -10s;
+}
+ul li:nth-child(6) {
+  animation-delay: -12s;
+}
+</style>
