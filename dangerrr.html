@@ -1,0 +1,93 @@
+<div class="container">
+  <button class="btn">Pesan Peringatan!</button>
+  <div class="popup">
+    <span id="close">&times;</span>
+    <p>Yakin mau menghapus diriku dihatimu?</p>
+    <div class="option">
+      <a href="">Gak jadi deh:)</a>
+      <a href="">Yakin!</a>
+    </div>
+  </div>
+</div>
+<div class="cover"></div>
+
+<style>
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.btn {
+  padding: 10px 15px;
+  background-color: hotpink;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: #333 0px 5px 15px;
+}
+.option {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#close {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  border-radius: 50%;
+  color: #ddd;
+  border: 2px solid hotpink;
+  float: right;
+  cursor: pointer;
+}
+.popup {
+  width: 400px;
+  height: 150px;
+  background-color: #333;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  color: hotpink;
+  font-size: 25pt;
+  box-shadow: #ddd 0px 5px 15px;
+}
+p {
+  font-size: 20px;
+  line-height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 15pt;
+  margin-bottom: 20px;
+}
+a:first-child {
+  float: left;
+  margin-left: 60px;
+}
+a:last-child {
+  float: right;
+  margin-right: 70px;
+}
+</style>
